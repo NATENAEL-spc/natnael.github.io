@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>natnael</title>
+
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap-grid.css">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap-icons.css">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+  
+
+  
+  
+
+<style>
+    
+    body{
+        background-color: lightblue;
+        
+    }
+  
+    
+    .wider-card{
+        
+        border-radius: 0.5rem;
+        box-shadow: 2px 6px 8px rgba(0.1, 0.3, 0.2, 0.6);
+       
+        background-color: rgb(197, 164, 164);
+        margin: 0 auto;
+        padding: 20px;
+        z-index: 0.5;
+        
+        
+    }
+    #profile{
+       border: 1px solid black;
+       width: 30px;
+       height: 20px;
+       border-radius: 5rem;
+       background-color: rgb(114, 185, 233);
+    }
+    .header{
+     
+            display: flex;
+            align-items: center;
+            color: #fff;
+        
+    }
+    .header a{
+        
+        text-decoration: none;
+        color: black;
+        margin-left: 50px;
+        
+    }
+    .header b{
+        font-size: 30px;
+        
+   
+        
+    }
+    .header a:focus{
+        color: #fff;
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+        box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+    }
+
+    .navbar-toggler-icon{
+        background-color: rgb(197, 164, 164);
+    }
+
+    .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+      
+
+        .collapse.navbar-collapse {
+            justify-content: flex-end;
+        }
+
+
+        .navbar-nav{
+            margin-left: auto;
+            
+        }
+        .navbar-nav li a:hover{
+            outline: 0;
+            border-radius: 0.5rem;
+            color: #fff;
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+
+            
+
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+        }
+
+    .nav {
+            display: flex;
+            margin-left: 300px;
+            background-color: rgb(197, 164, 164);
+            
+        }
+        .nav ul{
+            background-color: rgb(197, 164, 164);
+        }
+
+        
+        #bt{
+            margin-left: 100px;
+        }
+
+    .links{
+        margin-left: 400px;
+    }
+
+    .main-content{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            
+          
+    }
+    .row, .no-gutters{
+         margin: 0px 0.25px 0.3px;
+         border-bottom-left-radius: 0.5rem;
+         border-bottom-right-radius: 0.5rem;
+
+         
+    }
+    .background-overlay {
+      position: flex;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 60px;
+      margin: 100px 500px;
+       /* Desired background color with opacity */
+      mix-blend-mode: multiply; /* Blend mode to combine image and background color */
+      border-style: none;
+    }
+    .col-md-4{
+        margin-top: -150px;
+    }
+    
+    
+    .card-img-left{
+        height: 450px;
+        width: 390px;
+        border-bottom-right-radius: 20rem;
+        border-bottom-left-radius: 1rem;
+    }
+    .buttons{
+        margin: 20px 20px;
+       
+    }
+    .icon-img{
+       
+       border-bottom-left-radius: 20rem;
+       border-top-right-radius: 20rem;
+    
+      
+    }
+    .skills{
+        margin-top: 20px;
+    }
+    .social{
+        margin: 0px 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .social a{
+        text-decoration: none;
+        color: black;
+    }
+    .container{
+        border-radius: 0.5rem;
+    }
+
+.footer{
+    text-align: center;
+}
+    
+    @media (max-width: 768px) {
+        .wider-card{
+            border-radius: 0rem;
+        }
+            .header {
+                
+                align-items: flex-start;
+            }
+            .header b{
+        font-size: 20px;
+        
+   
+            }
+
+            .nav {
+                flex-direction: column;
+                margin-left: -35px;
+                
+            }
+            .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+        .navbar{
+                border-style: none;
+                margin-left: 10px;
+        }
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: #f8f9fa;
+                padding: 0px;
+                width: 50px;
+                margin-top: 30px;
+                margin-right: 20px;
+            }
+
+            .navbar-nav .nav-link {
+                margin-top: 5px;
+                
+                
+            }
+            .nav-item a{
+                padding: 5px;
+                border-radius: 0.5rem;
+                
+            }
+
+            .navbar-nav .nav-link:hover {
+                background-color: #e9ecef;
+            }
+
+            .navbar-nav.show {
+                display: block;
+            }
+
+
+            #bt{
+                margin-left:5px ;
+                margin-top: 8px;
+                width: auto;
+            }
+            
+
+            .hero-content {
+                padding: 20px;
+            }
+            .row .no-gutters{
+                flex-direction: column;
+            }
+            .col-md-4{
+
+            
+            margin-top: 150px;
+            margin-left: 50px;
+            }
+            .background-overlay{
+                margin: 0;
+            }
+            .row{
+                margin-right: auto;
+                margin-left: -80px;
+            }
+            h5,h3{
+                width: 303px;
+            }
+            .card-img-left{
+                height: 250px;
+                width: 190px;
+                margin-top: -20px;
+                margin-left: 50px;
+            }
+    
+        }
+</style>
+<script>
+     function view(){
+        document.getElementById("form").style.display='block';
+    }
+    function closeit(){
+        document.getElementById("form").style.display='none';
+    }
+</script>
+
+</head>
+<body>
+    
+    <div class="card wider-card">
+
+                <section class="header">
+                
+                    <img class="icon-img" src="img/nn.png" width="50px" height="50px" style="margin-bottom: 20px;"> 
+                    <i class="bi bi-profile"></i><b>Natnael</b>
+            <nav style="background-color: rgb(197, 164, 164);" class="navbar navbar-expand-lg navbar-light" >
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="background-color: rgb(197, 164, 164);"></span>
+                </button>
+                  
+                    <div class="nav" class="collapse navbar-collapse" id="navbarNav" style="background-color: rgb(197, 164, 164);">
+                            
+                        <ul class="navbar-nav" >
+                            <li class="nav-item">
+                            <a class="btn" href="home.html">home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="btn" href="main/about.html">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn" href="main/portfolio.html">portfolio</a>
+                                </li>
+                            <li class="nav-item">
+                            <a class="btn" href="#">Articles</a>
+                            </li>
+                        </div>
+                            
+                    </nav>
+                    </nav>
+                        <a href="#" id="bt" class="btn btn-primary links">hire me</a>
+            
+                </section>
+                
+        <section class="main-content">
+
+            <div class="row no-gutters">
+                <div class="card background-overlay">
+                    <img src="img/me22.png"  class="card-img-left">
+                </div>
+                    <div class="col-md-4"  style="">
+
+                        <p>Hi</p>
+                        <h3><b>i'm Natnael Dereje</b></h3>
+                        <h4>professional fullstack developer</h4>
+                        <h5>i'm fresh graduate but i have been working on different projects since 2021,both web and mobile application development.</h5>
+
+                        
+                            <div class="buttons">
+                                <button class="btn btn-primary" onclick="return view()">let's Talk</button>
+                                <button class="btn " style="margin-left: 10px; border: 1px solid black">How i work</button>
+                            </div>
+
+                    
+                        <span><b>BEST SKILLS ON</b></span>
+                        <div class="skills">
+                        <img src="img/java.png" width="40px" height="40px">
+                        <img src="img/html.png" width="30px" height="30px">
+                        <img src="img/javascript.png" width="30px" height="30px">
+                        <img src="img/logo.png" width="30px" height="30px">
+                        <img src="img/react-n.png" width="30px" height="30px">
+                        </div>
+                    
+                        
+                            
+                    </div>
+
+                
+                
+                  
+                    <span class="social"><h4> Check me on</h4></span>
+                    <div class="social">
+                        <a href="#"><span style="font-size: 20px;">Linked</span><i class="bi bi-linkedin" style="size: 35px;"></i></a>
+                    </div>
+                    
+            </div>
+        </section>
+       
+
+
+        <div class="container" id="form">
+            <h2>Contact Me <span onclick="return closeit()" style="color: red; margin-left: 130px;"><i class="bi bi-x" ></i></span></h2>
+            <form action="mailto:nhattydere2@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Send Email">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+
+
+    <footer class="footer">
+        &copy; <script>document.write(new Date().getFullYear());</script> Natnael. All rights reserved.
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js">
+
+   
+    </script>
+  
+    
+    
+</body>
+</html>
+<style>
+
+.container {
+            display: none;
+            max-width: 400px;
+            margin-left:  900px;
+            margin-top: -530px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            z-index: 10;
+            
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            height: 120px;
+        }
+
+        .form-group input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #555;
+        }
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+                margin-left: 140px;
+                margin-top: -650px;
+                width: 200px;
+                height: 450px;
+                border-radius: 0.5rem;
+            }
+            .container h2{
+                font-size: 20px;
+            }
+           
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 1px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+            .form-group textarea {
+            height: 100px;
+        }
+        }
+</style>
+
+
+
+
+

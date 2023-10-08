@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap-icons.css">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+
+        .b-example-divider {
+            padding-bottom: 20px;
+            height: 4rem;
+            background-color: rgb(197, 164, 164);
+            border: solid rgba(0, 0, 0, 0);
+            border-width: 0px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .form-control-dark {
+            color: #fff;
+            background-color: rgb(98, 182, 238);
+            border-color: var(--bs-gray);
+            display: block;
+            box-shadow: 0px 6px 8px rgba(0, 0.2, 0.2, 0.3);
+        }
+        
+        .btn:hover {
+            outline: 0;
+            border-radius: 0.5rem;
+            color: #fff;
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+
+            border-bottom: 2px solid seagreen;
+        }
+       
+        /* stylelint-disable selector-list-comma-newline-after */
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .collapse.navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        .navbar-nav {
+            
+            background-color: lightblue;
+           
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+        }
+
+
+
+        .blog-header {
+
+            line-height: 1;
+            
+        }
+
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif
+                /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+            ;
+            font-size: 2.25rem;
+            margin-top: -0.5rem;
+            margin-left: 25px;
+        }
+        .blog-header-logo img{
+            width: 60px;
+            height: 60px;
+         
+        }
+        .blog-header b{
+            font-size: 30px;
+           }
+
+
+
+
+      
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 22px;
+        }
+
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color:rgb(197, 164, 164);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border-radius: 0.3rem;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .footer{
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                width: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: #f8f9fa; 
+                padding: 10px;
+                height: 200px;
+            }
+
+            .navbar-nav .nav-link {
+                margin-top: 5px;
+                padding: 10px;
+                border-radius: 4px;
+            }
+
+            .navbar-nav .nav-link:hover {
+                background-color: #e9ecef;
+            }
+
+            .navbar-nav.show {
+                display: block;
+            }
+            .project-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="b-example-divider form-control-dark blog-header">
+
+
+        
+        <div class="blog-header-logo">
+            <img src="../img/l.png" alt="logo" class="" width="60px"
+                height="60px"><b>Natnael Dereje</b>
+        </div>
+        
+            <nav style="background-color: lightblue; height:auto;" class="navbar navbar-expand-lg navbar-light" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: lightblue;"></span></button>
+
+                        <div  class="collapse navbar-collapse" id="navbarNav" >
+
+                    
+                            <ul class="navbar-nav" style="background-color: lightblue;">
+                                <li class="nav-item">
+                                    <a class="btn" href="../index.html" class="btn">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a  class="btn " href="about.html" class="btn">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn" href="portfolio.html" class="btn">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn" href="#" class="btn">Articles</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+
+            </nav>
+        
+    </div>
+
+    <div class="container">
+        <h1 class="heading">My projects</h1>
+
+        <div class="project-card">
+            <h2>Hulu-Commerce</h2>
+            <p>This project is online shopping system. developed using HTML, javascript and css
+                 for front end and PHP for backend and SQL for database query. It has cart which
+                  the customr can add products and order also the customer can pay for the products
+                </p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Equb</h2>
+            <p>Equb is developed based on ethiopian cultural saving method which is performed by multiple peoples collecting money
+                 and give it to the lucky member based on lottery. i developed it using HTML.CSS,javascript for front end and PHP for backend and SQL.
+                it allows to create and adminstrator your owen equb and can chat with other members.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h2>Asset Management system for Assosa University</h2>
+            <p>This project will make the assosa university property managment easy so that
+                 each eligable comunity memmber can take and return assosa university property
+                  online without physical appearance for the approval.HTML.CSS,JavaScript are used for Frontend
+                   and PHP used for backend   </p>
+            <a href="#">View Project</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <footer class="footer">
+        &copy; <script>document.write(new Date().getFullYear());</script> Natnael. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap-icons.css">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+
+
+
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        .b-example-divider {
+            padding-bottom: 20px;
+            height: 4rem;
+            background-color: rgb(197, 164, 164);
+            border: solid rgba(0, 0, 0, 0);
+            border-width: 0px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .form-control-dark {
+            color: #fff;
+            background-color: rgb(98, 182, 238);
+            border-color: var(--bs-gray);
+            display: block;
+            box-shadow: 0px 6px 8px rgba(0, 0.2, 0.2, 0.3);
+        }
+
+        .form-control-dark:focus {
+            color: #fff;
+            background-color: var(--bs-dark);
+            border-color: ;
+            box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+        }
+
+        /* stylelint-disable selector-list-comma-newline-after */
+
+        .blog-header {
+
+            line-height: 1;
+            
+        }
+
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif
+                /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+            ;
+            font-size: 2.25rem;
+            margin-top: -0.5rem;
+            margin-left: 25px;
+        }
+        .blog-header-logo img{
+            width: 60px;
+            height: 60px;
+         
+        }
+        .blog-header b{
+            font-size: 30px;
+           }
+
+
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+        .collapse.navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        .navbar-nav {
+            height: 200px;
+            width: 80px;
+            background-color: lightblue;
+          
+           
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+        }
+
+
+
+        .btn{
+            margin: 5px;
+        }
+
+        .btn:hover {
+            outline: 0;
+            border-radius: 0.5rem;
+            color: #fff;
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+
+            border-bottom: 2px solid seagreen;
+        }
+
+        .btn:focus {
+            color: #fff;
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+            box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+
+            border-bottom: 2px solid seagreen;
+        }
+
+        .d-flex {
+            margin-left: 700px;
+            height: 100px;
+           
+        }
+
+        .blog-header-logo:hover {
+            text-decoration: none;
+        }
+
+        .wider-card {
+            
+            border-radius: 0.7rem;
+            box-shadow: 0px 6px 8px rgba(0, 0.2, 0.2, 0.3);
+            width: 80%;
+            margin: 10% 10%;
+            background-color: rgb(197, 164, 164);
+            border-top-right-radius: 0.5rem;
+
+        }
+
+        .col-md-6,.row {
+            margin-top: 10px;
+            font-family: sans-serif;
+        }
+
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+                /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+            ;
+            color: black;
+        }
+
+        p {
+            font-family: sans-serif;
+            letter-spacing: 0.01rem;
+        }
+
+        .display-4 {
+            font-size: 2.5rem;
+        }
+
+        .head-title {
+            font-size: 20px;
+            padding-bottom: 5px;
+            color: rgb(65, 67, 68);
+            text-transform: uppercase;
+            /*border-bottom: 1px solid rgb(22, 22, 22);*/
+            border-radius: 0.2rem;
+            background-color: rgb(98, 182, 238);
+            box-shadow: 0px 6px 8px rgba(0, 0.2, 0.2, 0.3);
+
+        }
+        h4{
+            font-size: 18px;
+        }
+        h5{
+            font-size: 16px;
+        }
+        .card-img{
+            margin-right: -600px;
+        }
+        .footer{
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .display-4 {
+                font-size: 3rem;
+
+            }
+            .blog-header-logo img{
+            width: 60px;
+            height: 60px;
+         
+        }
+           .blog-header b{
+            font-size: 40px;
+           }
+            .navbar-nav {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                background-color: #f8f9fa;
+                padding: 10px;
+                height: 40px;
+            }
+
+            .navbar-nav .nav-link {
+                margin-top: 5px;
+                padding: 10px;
+                border-radius: 4px;
+            }
+            
+
+            .navbar-nav .nav-link:hover {
+                background-color: #e9ecef;
+            }
+
+            .navbar-nav.show {
+                display: block;
+            }
+
+            .wider-card {
+            border-radius: 0.7rem;
+            box-shadow: 0px 6px 8px rgba(0, 0.2, 0.2, 0.3);
+            width: 80%;
+            margin: 10% 10%;
+            background-color: rgb(197, 164, 164);
+            border-top-right-radius: 0;
+            margin-top: 20px;
+
+        }
+        .card-img{
+            margin-right: 700px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b-example-divider form-control-dark blog-header">
+
+
+        
+        <div class="blog-header-logo">
+            <img src="../img/l.png" alt="logo" class="" width="60px"
+                height="60px"><b>Natnael Dereje</b>
+        </div>
+        
+            <nav style="background-color: lightblue; height:auto ; height: 40px; " class="navbar navbar-expand-lg navbar-light" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: lightblue;"></span></button>
+
+                        <div  class=" collapse navbar-collapse" id="navbarNav" >
+
+                    
+                            <ul class="navbar-nav" style="background-color: lightblue; margin-right: 280px; padding-bottom: 15px;">
+                                <li class="nav-item">
+                                    <a class="btn" href="../index.html" class="btn">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a  class="btn " href="about.html" class="btn">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn" href="portfolio.html" class="btn">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn" href="#" class="btn">Articles</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+
+            </nav>
+        
+    </div>
+    <div class="wider-card" style="margin-top: 50px;">
+        <h3 class="head-title"><b style="font-family: sans-serif;">Contact</b></h3>
+        <div class="row no-gutters" style="align-content: center; margin-left: 20px; ">
+
+            <div class="col-md-6">
+
+                <h4><i class="bi bi-person-circle"></i> <b>Name</b> Natnael Dereje Eneyew</h5>
+                    <h4><span class="bi bi-geo"></span> <b>Location:</b> assosa Ethiopia</h5>
+                        <h4><i class="bi bi-envelope"></i><b> Email: </b> <a
+                                href="mailto:nhattydere2@gmail.com"> nhattydere2@gmail.com</a></h5>
+                            <h4><i class="bi bi-linkedin"></i><b> linkedin:</b><a
+                                    href="https://www.linkedin.com/in/natnael-dereje-3219a9285/"> linkedin/in/natnael-dereje</a>
+                                </h5>
+                                <h4><b><i class="bi bi-github"></i> git:</b><a
+                                        href="https://github.com/NATENAEL-spc"> NATENAEL-spc</a></h4>
+                                        <h4><b><i class="bi bi-phone"></i> Tel:</b><a
+                                            href="#"> +251948019931</a></h4>
+
+            </div>
+                        <div class="col-md-6">
+
+                            <h4><b>Birth date</b> 03/02/2001 </h5>
+                                <h4><b>Age:</b> 22</h5>
+                                    <h4><b>Nationality: </b> Ethiopian</h5>
+                                        <h4><b>sex</b>: male</h5>
+                                            <h4><b>marital status: </b> single</h5>
+
+                        </div>
+            </div>
+         <!-- summary-->
+            <h3 class="head-title"><b>summary</b></h3>
+            <div class="row no-gutters" style="align-content: center; margin-left: 20px; ">
+                  <div class="col-md-6" >
+
+                     <h5 class="card-text"> <span class="auto-type"></span></h5>
+                  </div>
+                  <div class="col-md-6" >
+            
+                      <h5 class="card-img" style=""> <img src="../img/tagg.png"> </span></h5>
+            
+                  </div>
+            </div>
+
+            <h3 class="head-title"><b style="font-family: sans-serif;">education</b></h3>
+            <div class="row no-gutters" style="align-content: center; margin-left: 20px; ">
+                <div>
+                        <h4><b>Assosa University</b> &nbsp;&nbsp; assosa, Ethiopia</h4>
+                        <h5>BS. c Degree in computer science &nbsp;&nbsp;&nbsp;&nbsp;<b
+                                style="margin-left: 200px;"></b>2019-2023 GC</h5>
+                        <h5>CGPA: &nbsp;&nbsp;&nbsp;<b>3.73</b></h5>
+                        <h5>Exit Exam: &nbsp;&nbsp;&nbsp;<b>69%</b></h5>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- end of first card-->
+
+
+    
+    <!--end of summery card-->
+    
+
+
+
+
+
+
+
+
+
+    <!--end of education card-->
+
+    <div class="wider-card">
+        <h3 class="head-title"><b style="font-family: sans-serif;">Technical and Personal Skills</b></h3>
+        <div class="row no-gutters" style="align-content: center; margin-left: 20px; ">
+
+            <div class="col-md-6" >
+
+                <h5>
+                    <ul>
+                        <li>
+                            <h5><b>Programming language:</b> &nbsp;&nbsp;&nbsp; Java,JavaScript (react-native), C++,
+                                PHP, HTML5, CSS (Bootstrap)
+                        </li>
+                        <li>
+                            <h5><b>Database:</b> &nbsp;&nbsp;&nbsp;</b> SQL (SQL Server, SQLite)
+                        </li>
+                        <li>
+                            <h5><b>Industry software skills:</b> android studio, visual studio, Excel
+                        </li>
+                        <li>
+                            <h5><b>General Business Skills: </b> Excellent communication and ability to work well in
+                                a team.
+                        </li>
+                        <li>
+                            <h5><b>Languages Spoken and Written excellently:</b> English and amharic
+                        </li>
+
+                        
+                    </ul>
+                </h5>
+            </div>
+
+                <div class="col-md-6" >
+            
+                    <h5 class="card-img" > <img src="../img/skillss.PNG" width="300px" height="300px"> </span></h5>
+          
+                </div>
+
+
+            </div>
+
+            
+
+                <h3 class="head-title"><b style="font-family: sans-serif;">experince</b></h3>
+            <div class="row no-gutters" style="align-content: center; margin-left: 20px 20px; ">
+        
+                    <div>
+                        <h4><b>Assosa University, ICT directorate (Internship)</b> &nbsp;&nbsp; assosa, Ethiopia</h4>
+                        <h5>
+                            <ul>
+                                <li> configuring new switches and computers within the network</li>
+                                <li> resolving internet and network access issues (both wired and wireless)</li>
+                                <li> installing and maintaining computer systems including software and hardware on desktops
+                                    and
+                                    laptops </li>
+                            </ul>
+                        </h5>
+        
+        
+        
+                    </div>
+        
+            </div>
+
+
+
+            <h3 class="head-title"><b style="font-family: sans-serif;">Project Management</b></h3>
+            <div class="row no-gutters" style="align-content: center; margin-left: 20px; ">
+    
+                <div>
+                    <h4><b>Final year Project</b></h4>
+                    <h5>
+                        <ul>
+                            <li>
+                                <h5><b>Title:</b> &nbsp;&nbsp;&nbsp;Hulu-Commerce online shopping (web application),
+                                    Hulu-Commerce app (android application)
+                            </li>
+                            <li>
+                                <h5><b>Language:</b> &nbsp;&nbsp;&nbsp;</b> for web application (HTML, CSS, Bootstrap,
+                                    and JS for Frontend, PHP for
+                                    backend and MySQL database), for android application (java)
+                            </li>
+                            <li>
+                                <h5><b>Database:</b> &nbsp;&nbsp;&nbsp;MYSQL database
+                            </li>
+                            <li>
+                                <h5><b>Grade: </b>&nbsp;&nbsp;&nbsp;A+
+                            </li>
+                            <li>
+                                <h5><b>responsibility:</b> &nbsp;&nbsp;&nbsp;group leader
+                            </li>
+    
+                            <li>
+                                <h5><b>Advisor:</b> &nbsp;&nbsp;&nbsp;<b></b>Mr. Gebreigziabher A. email: <a
+                                        href="mailto:gebrishab@gmail.com">gebrishab@gmail.com</a>
+                            </li>
+                        </ul>
+                    </h5>
+    
+    
+    
+                </div>
+    
+            </div>
+
+
+
+        
+
+
+    </div>
+    <div class="wider-card">
+        
+
+
+
+    </div>
+    <!--end of experince card-->
+    <div class="wider-card">
+        
+
+
+        
+    </div>
+    <footer class="footer">
+        &copy; <script>document.write(new Date().getFullYear());</script> Natnael. All rights reserved.
+    </footer>
+    
+</body>
+
+</html>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["As a computer science graduate with a passion for innovation and excellence, I am eager to apply my skills and knowledge to a challenging and rewarding career in the field. I have a strong academic background, a proven record of delivering high-quality projects, and a keen interest in learning new technologies and methodologies. I am looking for an opportunity to join a dynamic and collaborative team where I can contribute to the success of the organization and grow as a professional."],
+        typespeed: 5,
+        loop: false
+
+    })
+</script>
